@@ -1,7 +1,7 @@
 FROM node:11.5-alpine as builder
 LABEL maintainer="Mark Ayers <mark@philoserf.com>"
-RUN npm install --global markdownlint-cli
-ENTRYPOINT [ "markdownlint" ]
+RUN npm install --global dockerlint
+ENTRYPOINT [ "dockerlint" ]
 CMD [ "--help" ]
 
 # Example:
@@ -12,5 +12,5 @@ CMD [ "--help" ]
 #   --interactive \
 #   --tty \
 #   --rm \
-#   philoserf/markdownlint \
-#     README.md
+#   philoserf/dockerlint \
+#     Dockerfile
