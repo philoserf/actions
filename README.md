@@ -2,10 +2,10 @@
 
 > a collection of docker images
 
+[![Stability:Experimental][1]][1x]
+
 - [pandoc](pandoc/Dockerfile "pandoc")
+- [markdownlint](markdownlint/Dockerfile "markdownlint")
 
-[![Build Status][1]](https://cloud.drone.io/philoserf/dockerfiles)
-[![Stability:Experimental][2]](https://masterminds.github.io/stability/experimental.html)
-
-[1]: https://cloud.drone.io/api/badges/philoserf/dockerfiles/status.svg
-[2]: https://masterminds.github.io/stability/experimental.svg
+[1]: https://masterminds.github.io/stability/experimental.svg
+[1x]: https://masterminds.github.io/stability/experimental.html
