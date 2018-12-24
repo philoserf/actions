@@ -15,17 +15,17 @@
 
 [1]: https://masterminds.github.io/stability/active.svg
 [1x]: https://masterminds.github.io/stability/active.html "active"
-[2]: dockerlint/Dockerfile "dockerlint"
+[2]: dockerlint/Dockerfile "Dockerfile"
 [2x]: https://images.microbadger.com/badges/image/philoserf/dockerlint.svg
-[2y]: https://microbadger.com/images/philoserf/dockerlint "dockerlint"
-[2z]: https://github.com/RedCoolBeans/dockerlint "dockerlint"
-[3]: markdownlint/Dockerfile "markdownlint"
+[2y]: https://microbadger.com/images/philoserf/dockerlint "microbadger"
+[2z]: https://github.com/RedCoolBeans/dockerlint "upstream"
+[3]: markdownlint/Dockerfile "Dockerfile"
 [3x]: https://images.microbadger.com/badges/image/philoserf/markdownlint.svg
-[3y]: https://microbadger.com/images/philoserf/markdownlint "markdownlint"
-[3z]: https://github.com/DavidAnson/markdownlint "markdownlint"
-[4]: pandoc/Dockerfile "pandoc"
+[3y]: https://microbadger.com/images/philoserf/markdownlint "microbadger"
+[3z]: https://github.com/DavidAnson/markdownlint "upstream"
+[4]: pandoc/Dockerfile "Dockerfile"
 [4x]: https://images.microbadger.com/badges/image/philoserf/pandoc.svg
-[4y]: https://microbadger.com/images/philoserf/pandoc "pandoc"
-[4z]: https://github.com/jgm/pandoc "pandoc"
+[4y]: https://microbadger.com/images/philoserf/pandoc "microbadger"
+[4z]: https://github.com/jgm/pandoc "upstream"
 [5]: https://circleci.com/gh/philoserf/dockerfiles.svg?style=shield
-[5x]: https://circleci.com/gh/philoserf/dockerfiles "dockerfiles"
+[5x]: https://circleci.com/gh/philoserf/dockerfiles "circleci"
