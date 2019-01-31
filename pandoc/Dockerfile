@@ -1,13 +1,13 @@
-FROM alpine:3.8 as builder
+FROM alpine:3.9 as builder
 
 WORKDIR /var/tmp
-ENV VER 2.5
+ENV VER 2.6
 ENV URL https://github.com/jgm/pandoc/releases/download/${VER}/pandoc-${VER}-linux.tar.gz
 ADD ${URL} pandoc.tgz
 RUN tar -xzf pandoc.tgz \
   && mv pandoc-${VER} pandoc
 
-FROM alpine:3.8 as runner
+FROM alpine:3.9 as runner
 LABEL maintainer="Mark Ayers <mark@philoserf.com>"
 
 COPY --from=builder /var/tmp/pandoc/bin/ /usr/bin/
