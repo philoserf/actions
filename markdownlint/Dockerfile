@@ -1,4 +1,4 @@
-FROM node:11.8-alpine as builder
+FROM node:11-alpine as builder
 LABEL maintainer="Mark Ayers <mark@philoserf.com>"
 RUN npm install --global markdownlint-cli
 ENTRYPOINT [ "markdownlint" ]
