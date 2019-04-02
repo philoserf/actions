@@ -1,6 +1,7 @@
 FROM node:11-alpine as builder
 LABEL maintainer="Mark Ayers <mark@philoserf.com>"
-RUN npm install --global markdownlint-cli
+ENV VER=0.13.0
+RUN npm install --global markdownlint-cli@${VER}
 ENTRYPOINT [ "markdownlint" ]
 CMD [ "--help" ]
 
