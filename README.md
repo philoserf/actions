@@ -9,9 +9,13 @@
 
 | Upstream Tool      | Dockerfile                   | Size                      |
 | ------------------ | ---------------------------- | ------------------------- |
-| [dockerlint][2z]   | [dockerlint/Dockerfile][2]   | [![dockerlint][2x]][2y]   |
 | [markdownlint][3z] | [markdownlint/Dockerfile][3] | [![markdownlint][3x]][3y] |
 | [pandoc][4z]       | [pandoc/Dockerfile][4]       | [![pandoc][4x]][4y]       |
+
+## Deprecation Notices
+
+[dockerlint][2z] will no longer be maintained in favor of [hadolint/hadolint][6]
+
 
 [1]: https://masterminds.github.io/stability/active.svg
 [1x]: https://masterminds.github.io/stability/active.html "active"
@@ -29,3 +33,4 @@
 [4z]: https://github.com/jgm/pandoc "upstream"
 [5]: https://circleci.com/gh/philoserf/dockerfiles.svg?style=shield
 [5x]: https://circleci.com/gh/philoserf/dockerfiles "circleci"
+[6]: https://hub.docker.com/r/hadolint/hadolint
