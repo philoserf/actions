@@ -1,6 +1,14 @@
-FROM node:11-alpine as builder
-LABEL maintainer="Mark Ayers <mark@philoserf.com>"
-ENV VER=0.13.0
+FROM node:12-alpine
+
+LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
+LABEL "repository"="https://github.com/philoserf/dockerfiles"
+LABEL "homepage"="https://github.com/philoserf/dockerfiles/tree/master/markdownlint"
+LABEL "com.github.actions.name"="markdownlint"
+LABEL "com.github.actions.description"="https://github.com/DavidAnson/markdownlint"
+LABEL "com.github.actions.color"="yellow"
+LABEL "com.github.actions.icon"="check"
+
+ENV VER=0.16.0
 RUN npm install --global markdownlint-cli@${VER}
 ENTRYPOINT [ "markdownlint" ]
 CMD [ "--help" ]
