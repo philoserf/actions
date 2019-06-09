@@ -1,5 +1,5 @@
 PANDOC_VER:=2.7.2
-IMAGE_VER:=1
+IMAGE_VER:=2
 VERSION:=${PANDOC_VER}-${IMAGE_VER}
 BASE:=philoserf/pandoc
 
