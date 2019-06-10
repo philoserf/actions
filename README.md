@@ -2,35 +2,32 @@
 
 > a collection of docker images
 
-[![CircleCI][5]][5x]
-[![Stability:Active][1]][1x]
+[![CircleCI][1]][1a] [![Stability:Active][2]][2a]
 
 ## contents
 
-| Upstream Tool      | Dockerfile                   | Size                      |
-| ------------------ | ---------------------------- | ------------------------- |
-| [markdownlint][3z] | [markdownlint/Dockerfile][3] | [![markdownlint][3x]][3y] |
-| [pandoc][4z]       | [pandoc/Dockerfile][4]       | [![pandoc][4x]][4y]       |
+| Upstream Tool     | Dockerfile                   | Size                     |
+| ----------------- | ---------------------------- | ------------------------ |
+| base              | [base/Dockerfile][3]         | 5.5 MB 2 Layers          |
+| [markdownlint][4] | [markdownlint/Dockerfile][5] | [![markdownlint][6]][6a] |
+| [pandoc][7]       | [pandoc/Dockerfile][8]       | [![pandoc][9]][9a]       |
 
 ## Deprecation Notices
 
-[dockerlint][2z] will no longer be maintained in favor of [hadolint/hadolint][6]
+[dockerlint][10] will no longer be maintained in favor of [hadolint/hadolint][11]
 
-
-[1]: https://masterminds.github.io/stability/active.svg
-[1x]: https://masterminds.github.io/stability/active.html "active"
-[2]: dockerlint/Dockerfile "Dockerfile"
-[2x]: https://images.microbadger.com/badges/image/philoserf/dockerlint.svg
-[2y]: https://microbadger.com/images/philoserf/dockerlint "microbadger"
-[2z]: https://github.com/RedCoolBeans/dockerlint "upstream"
-[3]: markdownlint/Dockerfile "Dockerfile"
-[3x]: https://images.microbadger.com/badges/image/philoserf/markdownlint.svg
-[3y]: https://microbadger.com/images/philoserf/markdownlint "microbadger"
-[3z]: https://github.com/DavidAnson/markdownlint "upstream"
-[4]: pandoc/Dockerfile "Dockerfile"
-[4x]: https://images.microbadger.com/badges/image/philoserf/pandoc.svg
-[4y]: https://microbadger.com/images/philoserf/pandoc "microbadger"
-[4z]: https://github.com/jgm/pandoc "upstream"
-[5]: https://circleci.com/gh/philoserf/dockerfiles.svg?style=shield
-[5x]: https://circleci.com/gh/philoserf/dockerfiles "circleci"
-[6]: https://hub.docker.com/r/hadolint/hadolint
+[1]: https://circleci.com/gh/philoserf/dockerfiles.svg?style=shield
+[1a]: https://circleci.com/gh/philoserf/dockerfiles "circleci"
+[2]: https://masterminds.github.io/stability/active.svg
+[2a]: https://masterminds.github.io/stability/active.html "active"
+[3]: base/Dockerfile "Dockerfile"
+[4]: https://github.com/DavidAnson/markdownlint "upstream"
+[5]: markdownlint/Dockerfile "Dockerfile"
+[6]: https://images.microbadger.com/badges/image/philoserf/markdownlint.svg
+[6a]: https://microbadger.com/images/philoserf/markdownlint "microbadger"
+[7]: https://github.com/jgm/pandoc "upstream"
+[8]: pandoc/Dockerfile "Dockerfile"
+[9]: https://images.microbadger.com/badges/image/philoserf/pandoc.svg
+[9a]: https://microbadger.com/images/philoserf/pandoc "microbadger"
+[10]: https://github.com/RedCoolBeans/dockerlint "upstream"
+[11]: https://hub.docker.com/r/hadolint/hadolint
