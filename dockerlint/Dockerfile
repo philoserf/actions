@@ -5,13 +5,4 @@ RUN npm install --global dockerlint@${VER}
 ENTRYPOINT [ "dockerlint" ]
 CMD [ "--help" ]
 
-# Example:
-#
-# docker run \
-#   --volume $PWD:$PWD \
-#   --workdir $PWD \
-#   --interactive \
-#   --tty \
-#   --rm \
-#   philoserf/dockerlint \
-#     Dockerfile
+# Deprecated in favor of hadolint/hadolint
