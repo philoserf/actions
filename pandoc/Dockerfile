@@ -1,4 +1,4 @@
-FROM alpine:3.9 as builder
+FROM alpine:3.10 as build
 
 WORKDIR /var/tmp
 ENV VER 2.7.3
@@ -17,8 +17,8 @@ LABEL "com.github.actions.description"="https://pandoc.org"
 LABEL "com.github.actions.color"="yellow"
 LABEL "com.github.actions.icon"="check"
 
-COPY --from=builder /var/tmp/pandoc/bin/ /usr/bin/
-COPY --from=builder /etc/ssl/cert.pem /etc/ssl/certs/ca-certificates.crt
+COPY --from=build /var/tmp/pandoc/bin/ /usr/bin/
+COPY --from=build /etc/ssl/cert.pem /etc/ssl/certs/ca-certificates.crt
 
 ENTRYPOINT ["pandoc"]
 CMD ["--help"]
