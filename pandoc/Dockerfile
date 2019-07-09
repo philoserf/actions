@@ -7,7 +7,7 @@ ADD ${URL} pandoc.tgz
 RUN tar -xzf pandoc.tgz \
   && mv pandoc-${VER} pandoc
 
-FROM alpine:3.9 as runner
+FROM alpine:3.10 as runner
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
 LABEL "repository"="https://github.com/philoserf/dockerfiles"
