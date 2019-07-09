@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM node:10-alpine
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
 LABEL "repository"="https://github.com/philoserf/dockerfiles"
