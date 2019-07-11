@@ -10,8 +10,8 @@ RUN tar -xzf pandoc.tgz \
 FROM alpine:3.10 as runner
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
-LABEL "repository"="https://github.com/philoserf/dockerfiles"
-LABEL "homepage"="https://github.com/philoserf/dockerfiles/tree/master/pandoc"
+LABEL "repository"="https://github.com/philoserf/actions"
+LABEL "homepage"="https://github.com/philoserf/actions/tree/master/pandoc"
 LABEL "com.github.actions.name"="pandoc"
 LABEL "com.github.actions.description"="https://pandoc.org"
 LABEL "com.github.actions.color"="yellow"
