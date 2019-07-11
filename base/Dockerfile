@@ -1,14 +1,14 @@
 FROM alpine:3.10
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
-LABEL "repository"="https://github.com/philoserf/dockerfiles"
-LABEL "homepage"="https://github.com/philoserf/dockerfiles/tree/master/base"
+LABEL "repository"="https://github.com/philoserf/actions"
+LABEL "homepage"="https://github.com/philoserf/actions/tree/master/base"
 
 LABEL "com.github.actions.name"="base"
 LABEL "com.github.actions.description"="a base for all other actions"
 LABEL "com.github.actions.color"="white"
 LABEL "com.github.actions.icon"="check"
 
-COPY entrypoint.sh .
+COPY entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
