@@ -1,8 +1,8 @@
 FROM node:10-alpine
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
-LABEL "repository"="https://github.com/philoserf/dockerfiles"
-LABEL "homepage"="https://github.com/philoserf/dockerfiles/tree/master/markdownlint"
+LABEL "repository"="https://github.com/philoserf/actions"
+LABEL "homepage"="https://github.com/philoserf/actions/tree/master/markdownlint"
 LABEL "com.github.actions.name"="markdownlint"
 LABEL "com.github.actions.description"="https://github.com/DavidAnson/markdownlint"
 LABEL "com.github.actions.color"="yellow"
