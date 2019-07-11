@@ -14,6 +14,16 @@ plugins:
   - jekyll-asciidoc
 exclude:
   - README.adoc
+  - LICENSE
+  - Makefile
+  - Gemfile.lock
+  - CODE_OF_CONDUCT.adoc
+  - CONTRIBUTING.adoc
+  - markdownlint/
+  - pandoc/
+  - build/
+  - Gemfile
+  - base/
 
 asciidoc: {}
 asciidoctor:
