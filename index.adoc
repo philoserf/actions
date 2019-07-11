@@ -1,6 +1,6 @@
 == GitHub Actions
 
-NOTE: A.K.A.; a collection of docker images
+NOTE: AKA a collection of docker images
 
 image:https://masterminds.github.io/stability/active.svg[Stability:Active]
 
