@@ -25,4 +25,8 @@ image:https://masterminds.github.io/stability/active.svg[Stability:Active]
 |https://github.com/jgm/pandoc[pandoc]
 |pandoc/Dockerfile
 |image:https://images.microbadger.com/badges/image/philoserf/pandoc.svg[pandoc]
+
+|https://pages.github.com[github pages]
+|gh-pages/Dockerfile
+|image:https://images.microbadger.com/badges/image/philoserf/gh-pages.svg[gh-pages]
 |===
