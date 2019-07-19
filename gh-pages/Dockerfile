@@ -1,4 +1,4 @@
-FROM ruby:2-alpine
+FROM ruby
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
 LABEL "repository"="https://github.com/philoserf/actions"
