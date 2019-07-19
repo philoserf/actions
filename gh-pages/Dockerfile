@@ -1,4 +1,4 @@
-FROM ruby
+FROM ruby:latest
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
 LABEL "repository"="https://github.com/philoserf/actions"
