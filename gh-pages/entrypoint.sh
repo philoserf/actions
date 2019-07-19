@@ -2,14 +2,7 @@
 
 set -o errexit
 set -o nounset
-set -o pipefail
 
-error() {
-	echo "$1"
-	exit 1
-}
-
-gem install bundler
 bundle install
 bundle exec jekyll build
 cd build
