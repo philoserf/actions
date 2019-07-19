@@ -6,8 +6,14 @@ workflow "github-pages" {
   ]
 }
 
+action "only_master" {
+  uses = "actions/bin/filter@master"
+  args = "branch master"
+}
+
 action "build-deploy" {
-  uses    = "BryanSchuetz/jekyll-deploy-gh-pages@master"
+  uses    = "philoserf/actions/gh-pages@master"
+  needs   = "only_master"
 
   secrets = [
     "GITHUB_TOKEN"
