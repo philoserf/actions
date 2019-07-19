@@ -9,6 +9,7 @@ error() {
 	exit 1
 }
 
+gem install bundler
 bundle install
 bundle exec jekyll build
 cd build
