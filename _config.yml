@@ -13,17 +13,18 @@ destination: ./build
 plugins:
   - jekyll-asciidoc
 exclude:
-  - README.adoc
-  - LICENSE
-  - Makefile
-  - Gemfile.lock
+  - base/
+  - build/
   - CODE_OF_CONDUCT.adoc
   - CONTRIBUTING.adoc
+  - Gemfile
+  - Gemfile.lock
+  - gh-pages/
+  - LICENSE
+  - Makefile
   - markdownlint/
   - pandoc/
-  - build/
-  - Gemfile
-  - base/
+  - README.adoc
 
 asciidoc: {}
 asciidoctor:
