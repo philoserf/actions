@@ -1,8 +1,8 @@
 FROM alpine:3.10 as build
 
 WORKDIR /var/tmp
-ENV VER 2.7.3
-ENV URL https://github.com/jgm/pandoc/releases/download/${VER}/pandoc-${VER}-linux.tar.gz
+ENV VER 2.8.1
+ENV URL https://github.com/jgm/pandoc/releases/download/${VER}/pandoc-${VER}-linux-amd64.tar.gz
 ADD ${URL} pandoc.tgz
 RUN tar -xzf pandoc.tgz \
   && mv pandoc-${VER} pandoc
