@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:13-alpine
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
 LABEL "repository"="https://github.com/philoserf/actions"
@@ -8,7 +8,7 @@ LABEL "com.github.actions.description"="https://github.com/DavidAnson/markdownli
 LABEL "com.github.actions.color"="yellow"
 LABEL "com.github.actions.icon"="check"
 
-ENV VER=0.17.0
+ENV VER=0.19.0
 RUN npm install --global markdownlint-cli@${VER}
 ENTRYPOINT [ "markdownlint" ]
 CMD [ "--help" ]
