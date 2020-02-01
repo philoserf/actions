@@ -1,7 +1,3 @@
----
-layout: home
----
-
 == GitHub Actions
 
 NOTE: A.K.A.; a collection of docker images
