@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+# shellcheck shell=dash
 
 set -o errexit
 set -o nounset
