@@ -1,7 +1,7 @@
 FROM alpine:3.11 as build
 
 WORKDIR /var/tmp
-ENV VER 2.9.1.1
+ENV VER 2.9.2
 ENV URL https://github.com/jgm/pandoc/releases/download/${VER}/pandoc-${VER}-linux-amd64.tar.gz
 ADD ${URL} pandoc.tgz
 RUN tar -xzf pandoc.tgz \
