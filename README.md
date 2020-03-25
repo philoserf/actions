@@ -19,7 +19,3 @@
 [markdownlint]: https://github.com/DavidAnson/markdownlint
 [pandoc_badge]: https://images.microbadger.com/badges/image/philoserf/pandoc.svg
 [pandoc]: https://github.com/jgm/pandoc
-
-
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphiloserf%2Factions.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphiloserf%2Factions?ref=badge_large)
