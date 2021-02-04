@@ -1,4 +1,4 @@
-FROM alpine:3.11 as build
+FROM alpine:3.13 as build
 
 WORKDIR /var/tmp
 ENV VER 2.9.2.1
@@ -7,7 +7,7 @@ ADD ${URL} pandoc.tgz
 RUN tar -xzf pandoc.tgz \
   && mv pandoc-${VER} pandoc
 
-FROM alpine:3.11 as runner
+FROM alpine:3.13 as runner
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
 LABEL "repository"="https://github.com/philoserf/actions"
