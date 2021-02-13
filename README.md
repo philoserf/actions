@@ -1,4 +1,4 @@
-# Tool container images/Github actions
+# Tool container images/GitHub actions
 
 ![stability][active]
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphiloserf%2Factions.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphiloserf%2Factions?ref=badge_shield)
