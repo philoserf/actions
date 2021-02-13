@@ -1,4 +1,4 @@
-# Tool container images/GitHub actions
+# Tool container images—GitHub actions
 
 ![stability][active]
 
