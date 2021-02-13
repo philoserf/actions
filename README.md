@@ -2,7 +2,8 @@
 
 ![stability][active]
 
-These are container images for tools I use. I remove them here once I find a better one maintained elsewhere that serves my purposes. 
+These are container images for tools I use. I remove them here once I find a
+better one maintained elsewhere that serves my purposes.
 
 ## contents
 
@@ -11,7 +12,10 @@ These are container images for tools I use. I remove them here once I find a bet
 | none          | base/Dockerfile   | ![base][base_badge]     |
 | [pandoc]      | pandoc/Dockerfile | ![pandoc][pandoc_badge] |
 
-<!-- references -->
+<hr>
+| [home](https://philoserf.github.io/) | [philoserf.com](https://philoserf.com/) |
+
+<!-- ref -->
 
 [active]: https://masterminds.github.io/stability/active.svg
 [base_badge]: https://img.shields.io/badge/5.5%20MB-2%20Layers-blue
