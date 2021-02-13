@@ -1,10 +1,9 @@
-# Tool container images and GitHub actions
+# Tool container images/Github actions
 
 ![stability][active]
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphiloserf%2Factions.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphiloserf%2Factions?ref=badge_shield)
 
-These are container images/GitHub actions for tools I use. I remove them here
-once I find a better one maintained elsewhere that serves my purposes.
+These are container images for tools I use. I remove them here once I find a better one maintained elsewhere that serves my purposes. 
 
 ## contents
 
