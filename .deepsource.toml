@@ -5,6 +5,5 @@ enabled = true
 [analyzers.meta]
   dockerfile_paths = [
     "base/Dockerfile",
-    "markdownlint/Dockerfile",
     "pandoc/Dockerfile"
   ]
