@@ -7,10 +7,10 @@ These are container images for tools I use. I remove them here once I find a bet
 
 ## contents
 
-| Upstream Tool  | Dockerfile              | Size                                |
-| -------------- | ----------------------- | ----------------------------------- |
-| none           | base/Dockerfile         | ![base][base_badge]                 |
-| [pandoc]       | pandoc/Dockerfile       | ![pandoc][pandoc_badge]             |
+| Upstream Tool | Dockerfile        | Size                    |
+| ------------- | ----------------- | ----------------------- |
+| none          | base/Dockerfile   | ![base][base_badge]     |
+| [pandoc]      | pandoc/Dockerfile | ![pandoc][pandoc_badge] |
 
 <!-- references -->
 
