@@ -2,7 +2,7 @@ FROM alpine:3.13
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
 LABEL "repository"="https://github.com/philoserf/actions"
-LABEL "homepage"="https://github.com/philoserf/actions/tree/master/base"
+LABEL "homepage"="https://philoserf.github.io/actions"
 
 LABEL "com.github.actions.name"="base"
 LABEL "com.github.actions.description"="a base for all other actions"
