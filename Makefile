@@ -1,6 +1,4 @@
-lint: markdown yamllint hadolint
-markdown:
-	markdownlint --fix .github/**/*.md **/*.md
+lint: yamllint hadolint
 yamllint:
 	yamllint .*.yaml .yamllint
 hadolint:
