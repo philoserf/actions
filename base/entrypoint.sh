@@ -10,5 +10,5 @@ error() {
   exit 1
 }
 
-echo "This is a base image for GitHub Actions and other useful work."
+echo "This is a base container image for GitHub actions and other useful work."
 exit 0
