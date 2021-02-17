@@ -12,3 +12,4 @@ rules:
   indentation:
     spaces: consistent
   document-start: disable
+  comments: disable
