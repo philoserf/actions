@@ -22,6 +22,5 @@ better one maintained elsewhere that serves my purposes.
 [base_badge]: https://img.shields.io/badge/5.5%20MB-2%20Layers-blue
 [pandoc_badge]: https://images.microbadger.com/badges/image/philoserf/pandoc.svg
 [pandoc]: https://github.com/jgm/pandoc
-[markdownlint_badge]:
-  https://images.microbadger.com/badges/image/philoserf/markdownlint.svg
+[markdownlint_badge]: https://images.microbadger.com/badges/image/philoserf/markdownlint.svg
 [markdownlint]: https://github.com/DavidAnson/markdownlint-cli2
