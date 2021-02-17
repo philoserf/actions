@@ -15,12 +15,12 @@ tasks:
   markdownlint:
     desc: markdown lint tasks
     cmds:
-      - markdownlint --fix .github/**/*.md **/*.md
+      - markdownlint-cli2 .
 
   yamllint:
     desc: yaml lint tasks
     cmds:
-      - yamllint .*.yaml .yamllint
+      - yamllint --strict .
 
   hadolint:
     desc: container definition lint tasks
