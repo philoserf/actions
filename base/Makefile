@@ -1,4 +1,4 @@
-NAME:=docker.io/philoserf/pandoc:latest
+NAME:=docker.io/philoserf/base:latest
 DATE:=$(shell date +%Y%m%d)
 
 local:
