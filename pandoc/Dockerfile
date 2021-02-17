@@ -1,13 +1,4 @@
-FROM alpine:3.13 as build
-
-WORKDIR /var/tmp
-ENV VER 2.11.4
-ENV URL https://github.com/jgm/pandoc/releases/download/${VER}/pandoc-${VER}-linux-amd64.tar.gz
-ADD ${URL} pandoc.tgz
-RUN tar -xzf pandoc.tgz \
-  && mv pandoc-${VER} pandoc
-
-FROM alpine:3.13 as runner
+FROM alpine:3.13
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
 LABEL "repository"="https://github.com/philoserf/actions"
@@ -17,10 +8,15 @@ LABEL "com.github.actions.description"="https://pandoc.org"
 LABEL "com.github.actions.color"="yellow"
 LABEL "com.github.actions.icon"="check"
 
-COPY --from=build /var/tmp/pandoc/bin/ /usr/bin/
-COPY --from=build /etc/ssl/cert.pem /etc/ssl/certs/ca-certificates.crt
+WORKDIR /var/tmp
+ENV VER 2.11.4
+ENV URL https://github.com/jgm/pandoc/releases/download/${VER}/pandoc-${VER}-linux-amd64.tar.gz
+ADD ${URL} pandoc.tgz
+RUN tar -xzf pandoc.tgz
+RUN rm -rf pandoc.tgz
+RUN mv pandoc-${VER} /pandoc
 
-ENTRYPOINT ["pandoc"]
+ENTRYPOINT ["/pandoc"]
 CMD ["--help"]
 
 # Example:
