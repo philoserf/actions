@@ -23,4 +23,4 @@ better one maintained elsewhere that serves my purposes.
 [pandoc_badge]: https://images.microbadger.com/badges/image/philoserf/pandoc.svg
 [pandoc]: https://github.com/jgm/pandoc
 [markdownlint_badge]: https://images.microbadger.com/badges/image/philoserf/markdownlint.svg
-[markdownlint]: https://github.com/DavidAnson/markdownlint-cli2
+[markdownlint_cli2]: https://github.com/DavidAnson/markdownlint-cli2
