@@ -51,6 +51,6 @@ jobs:
         uses: docker/build-push-action@v2.3.0
         with:
           context: pandoc/.
-          confiletext: pandoc/Dockerfile
+          file: pandoc/Dockerfile
           push: true
           tags: ghcr.io/philoserf/pandoc:latest
