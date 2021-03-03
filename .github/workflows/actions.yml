@@ -12,7 +12,7 @@ jobs:
       - name: markdownlint
         uses: DavidAnson/markdownlint-cli2-action@v2.0.0
       - name: yamllint
-        uses: pipeline-components/yamllint@v0.16.1
+        uses: pipeline-components/yamllint@v0.16.2
       - name: hadolint
         uses: reviewdog/action-hadolint@v1
 
