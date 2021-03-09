@@ -9,12 +9,12 @@ LABEL "com.github.actions.color"="yellow"
 LABEL "com.github.actions.icon"="check"
 
 WORKDIR /var/tmp
-ENV VER 2.11.4
+ENV VER 2.12
 ENV URL https://github.com/jgm/pandoc/releases/download/${VER}/pandoc-${VER}-linux-amd64.tar.gz
 ADD ${URL} pandoc.tgz
-RUN tar -xzf pandoc.tgz
-RUN rm -rf pandoc.tgz
-RUN mv pandoc-${VER} /pandoc
+RUN tar -xzf pandoc.tgz \
+  && rm -rf pandoc.tgz \
+  && mv pandoc-${VER} /pandoc
 
 ENTRYPOINT ["/pandoc"]
 CMD ["--help"]
