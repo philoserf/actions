@@ -1,4 +1,4 @@
-FROM node:15-alpine3.13
+FROM node:16-alpine3.13
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
 LABEL "repository"="https://github.com/philoserf/actions"
