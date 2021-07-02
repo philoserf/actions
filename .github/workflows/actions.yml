@@ -34,21 +34,21 @@ jobs:
           username: philoserf
           password: ${{ secrets.CR_PAT }}
       - name: build and push base
-        uses: docker/build-push-action@v2.5.0
+        uses: docker/build-push-action@v2.6.1
         with:
           context: base/.
           file: base/Dockerfile
           push: true
           tags: ghcr.io/philoserf/base:latest
       - name: build and push markdownlint
-        uses: docker/build-push-action@v2.5.0
+        uses: docker/build-push-action@v2.6.1
         with:
           context: markdownlint/.
           file: markdownlint/Dockerfile
           push: true
           tags: ghcr.io/philoserf/markdownlint:latest
       - name: build and push pandoc
-        uses: docker/build-push-action@v2.5.0
+        uses: docker/build-push-action@v2.6.1
         with:
           context: pandoc/.
           file: pandoc/Dockerfile
