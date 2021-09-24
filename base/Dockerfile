@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
 LABEL "repository"="https://github.com/philoserf/actions"

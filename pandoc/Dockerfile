@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3
 
 LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
 LABEL "repository"="https://github.com/philoserf/actions"
@@ -9,7 +9,7 @@ LABEL "com.github.actions.color"="yellow"
 LABEL "com.github.actions.icon"="check"
 
 WORKDIR /var/tmp
-ENV VER 2.14.1
+ENV VER 2.14.2
 ENV URL https://github.com/jgm/pandoc/releases/download/${VER}/pandoc-${VER}-linux-amd64.tar.gz
 ADD ${URL} pandoc.tgz
 RUN tar -xzf pandoc.tgz \

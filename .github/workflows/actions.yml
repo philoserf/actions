@@ -2,7 +2,6 @@ name: lint
 on: push # yamllint disable-line
 
 jobs:
-
   lint:
     name: lint
     runs-on: ubuntu-latest
@@ -10,7 +9,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: markdownlint
-        uses: DavidAnson/markdownlint-cli2-action@v2.0.0
+        uses: DavidAnson/markdownlint-cli2-action@v4
       - name: yamllint
         uses: pipeline-components/yamllint@v0.16.2
       - name: hadolint
@@ -34,21 +33,21 @@ jobs:
           username: philoserf
           password: ${{ secrets.CR_PAT }}
       - name: build and push base
-        uses: docker/build-push-action@v2.6.1
+        uses: docker/build-push-action@v2
         with:
           context: base/.
           file: base/Dockerfile
           push: true
           tags: ghcr.io/philoserf/base:latest
       - name: build and push markdownlint
-        uses: docker/build-push-action@v2.6.1
+        uses: docker/build-push-action@v2
         with:
           context: markdownlint/.
           file: markdownlint/Dockerfile
           push: true
           tags: ghcr.io/philoserf/markdownlint:latest
       - name: build and push pandoc
-        uses: docker/build-push-action@v2.6.1
+        uses: docker/build-push-action@v2
         with:
           context: pandoc/.
           file: pandoc/Dockerfile
