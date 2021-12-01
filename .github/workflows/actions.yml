@@ -31,26 +31,24 @@ jobs:
           registry: ghcr.io
           username: philoserf
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: temp
-        run: env|sort
       - name: build and push base
         uses: docker/build-push-action@v2
         with:
-          context: base/.
+          context: base
           file: base/Dockerfile
           push: true
           tags: ghcr.io/philoserf/base:latest
       - name: build and push markdownlint
         uses: docker/build-push-action@v2
         with:
-          context: markdownlint/.
+          context: markdownlint
           file: markdownlint/Dockerfile
           push: true
           tags: ghcr.io/philoserf/markdownlint:latest
       - name: build and push pandoc
         uses: docker/build-push-action@v2
         with:
-          context: pandoc/.
+          context: pandoc
           file: pandoc/Dockerfile
           push: true
           tags: ghcr.io/philoserf/pandoc:latest
