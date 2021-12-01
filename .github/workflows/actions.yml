@@ -31,6 +31,8 @@ jobs:
           registry: ghcr.io
           username: philoserf
           password: ${{ secrets.GITHUB_TOKEN }}
+      - name: temp
+        run: env|sort
       - name: build and push base
         uses: docker/build-push-action@v2
         with:
