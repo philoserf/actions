@@ -15,7 +15,7 @@ tasks:
   markdownlint:
     desc: markdown lint tasks
     cmds:
-      - markdownlint-cli2 .
+      - markdownlint .
 
   yamllint:
     desc: yaml lint tasks
