@@ -9,6 +9,6 @@ LABEL "com.github.actions.description"="using markdownlint-cli2"
 LABEL "com.github.actions.color"="white"
 LABEL "com.github.actions.icon"="check"
 
-RUN npm install --global markdownlint-cli2@0.3.2
+RUN npm install --global markdownlint-cli2@0.4.0
 
 ENTRYPOINT ["markdownlint-cli2"]
