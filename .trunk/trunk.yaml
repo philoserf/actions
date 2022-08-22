@@ -1,12 +1,13 @@
 version: 0.1
 cli:
-  version: 0.14.1-beta
+  version: 0.16.1-beta
 lint:
   enabled:
-    - actionlint@1.6.15
-    - gitleaks@8.8.12
+    - git-diff-check@SYSTEM
+    - actionlint@1.6.16
+    - gitleaks@8.11.0
     - hadolint@2.10.0
-    - markdownlint@0.31.1
+    - markdownlint@0.32.2
     - prettier@2.7.1
     - shellcheck@0.8.0
     - shfmt@3.5.0
