@@ -1,3 +1,0 @@
-# Support
-
-write this
