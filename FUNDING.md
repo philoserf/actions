@@ -1,3 +1,0 @@
-# Funding
-
-write this
