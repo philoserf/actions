@@ -1,0 +1,32 @@
+FROM golang:alpine as build
+
+LABEL "maintainer"="Mark Ayers <mark@philoserf.com>"
+LABEL "repository"="https://github.com/philoserf/actions"
+LABEL "homepage"="https://philoserf.github.io/actions"
+
+LABEL "com.github.actions.name"="tftools"
+LABEL "com.github.actions.description"="a terraform tool collection"
+LABEL "com.github.actions.color"="white"
+LABEL "com.github.actions.icon"="check"
+
+# hadolint global ignore=DL3059
+# using squash to reduce image size
+RUN go install github.com/hashicorp/terraform@latest
+RUN go install github.com/terraform-linters/tflint@latest
+RUN go install github.com/aquasecurity/tfsec/cmd/tfsec@latest
+RUN go install github.com/terraform-docs/terraform-docs@latest
+RUN go install github.com/snyk/driftctl@latest
+
+FROM alpine:3
+COPY --from=build /go/bin/terraform /usr/local/bin/terraform
+COPY --from=build /go/bin/tflint /usr/local/bin/tflint
+COPY --from=build /go/bin/tfsec /usr/local/bin/tfsec
+COPY --from=build /go/bin/terraform-docs /usr/local/bin/terraform-docs
+COPY --from=build /go/bin/driftctl /usr/local/bin/driftctl
+
+RUN adduser -D -u 1000 -h /home/runner -s /bin/bash runner
+WORKDIR /home/runner
+USER runner
+COPY .tflint.hcl .tflint.hcl
+RUN tflint --init
+ENTRYPOINT ["/bin/sh"]
