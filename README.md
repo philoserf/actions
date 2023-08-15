@@ -1,4 +1,4 @@
-# Tool container images/GitHub actions
+# Container images/GitHub actions
 
-These are container images for tools I use. I remove them here once I find a
+These are container images for the tools I use. I will remove them here once I find a
 better one maintained elsewhere.
